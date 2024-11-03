@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Register } from "./pages/Register";
 import  { Navbar }   from "./components/Navbar";
+import { Ingredients} from  "./pages/Ingredients";
+import { Recipies } from "./pages/Recipies";
+
 
 function App() {
   return (
@@ -12,6 +15,8 @@ function App() {
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/ingredients" element={<Ingredients />} />
+        <Route path="/recipies" element={<Recipies />} />
       </Routes>
     </BrowserRouter>
   );
